@@ -1,0 +1,23 @@
+{
+  "name": "tanstack-mfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lerna run dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "mfes/*"
+  ],
+  "dependencies": {
+    "@module-federation/enhanced": "^0.6.9",
+    "@tanstack/react-router": "^1.62.1",
+    "@tanstack/router-devtools": "^1.62.1"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.8"
+  }
+}
