@@ -25,6 +25,19 @@ export default defineConfig({
           remotes: {
             service: 'service@http://localhost:3002/mf-manifest.json',
           },
+          shared: {
+            react: {
+              singleton: true,
+              requiredVersion: '^18.3.1',
+            },
+            'react-dom': {
+              singleton: true,
+            },
+            '@tanstack/react-router': {
+              singleton: true,
+              requiredVersion: '^1.62.1',
+            },
+          },
         }),
       ]);
     },

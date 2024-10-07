@@ -3,11 +3,11 @@ import './App.css';
 import './App.css';
 import {
   Outlet,
-  RouterProvider,
   Link,
   createRouter,
   createRoute,
   createRootRoute,
+  RouterProvider,
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 
@@ -61,8 +61,7 @@ const Product = () => {
   return (
     <div className="content">
       <h1>Product SPA 📦</h1>
-      {/* Cannot seem to nest Further */}
-      {/* <RouterProvider router={router} /> */}
+      <RouterProvider router={router} />
     </div>
   );
 };

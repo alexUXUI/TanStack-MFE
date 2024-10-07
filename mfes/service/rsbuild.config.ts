@@ -21,6 +21,19 @@ export default defineConfig({
           exposes: {
             './Service': './src/app.tsx',
           },
+          shared: {
+            // react: {
+            //   singleton: true,
+            //   requiredVersion: '^18.3.1',
+            // },
+            // 'react-dom': {
+            //   singleton: true,
+            // },
+            '@tanstack/react-router': {
+              singleton: true,
+              requiredVersion: '^1.62.1',
+            },
+          },
         }),
       ]);
     },

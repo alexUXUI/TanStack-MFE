@@ -21,14 +21,19 @@ export default defineConfig({
           remotes: {
             product: 'product@http://localhost:3001/mf-manifest.json',
           },
-          // shared: {
-          //   react: {
-          //     singleton: true,
-          //   },
-          //   'react-dom': {
-          //     singleton: true,
-          //   },
-          // },
+          shared: {
+            react: {
+              singleton: true,
+              requiredVersion: '^18.3.1',
+            },
+            'react-dom': {
+              singleton: true,
+            },
+            '@tanstack/react-router': {
+              singleton: true,
+              requiredVersion: '^1.62.1',
+            },
+          },
         }),
       ]);
     },

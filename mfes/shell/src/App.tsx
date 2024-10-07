@@ -49,8 +49,18 @@ const productRoute = createRoute({
   component: Product,
 });
 
+const serviceRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/product/service',
+  component: () => {},
+});
+
 // add to route tree
-const routeTree = rootRoute.addChildren([indexRoute, productRoute]);
+const routeTree = rootRoute.addChildren([
+  indexRoute,
+  productRoute,
+  serviceRoute,
+]);
 
 // pass route tree to router
 const router = createRouter({ routeTree });
