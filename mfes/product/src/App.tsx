@@ -44,7 +44,7 @@ const indexRoute = createRoute({
   },
 });
 
-// @TODO: this should be created in the Product MFE and imported here
+// @TODO: this should be created in the Service MFE and imported here
 const serviceRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/product/service',
